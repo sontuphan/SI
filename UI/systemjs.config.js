@@ -27,7 +27,7 @@
 
       'angular2-highcharts': 'npm:angular2-highcharts',
       'highcharts/highstock.src': 'npm:highcharts/highstock.js',
-      'socket.io-client': 'node_modules/socket.io-client/socket.io.js'
+      'socket.io-client': 'npm:socket.io-client/dist/socket.io.js'
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
@@ -46,7 +46,9 @@
         main: './index.js',
         defaultExtension: 'js'
       },
-      'socket.io-client': { defaultExtension: 'js' }
+      'socket.io-client': {
+        defaultExtension: 'js'
+      }
     }
   });
 })(this);
